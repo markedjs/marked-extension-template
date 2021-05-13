@@ -3,7 +3,7 @@ module.exports = function(options = {}) {
 
   return {
     tokenizer: {
-      space(src) {
+      paragraph(src) {
         if (src !== 'example markdown') {
           return false;
         }
