@@ -9,6 +9,6 @@ describe('this-extension', () => {
   test('no options', () => {
     // test defaults
     marked.use(thisExtension());
-    expect(marked('example.com')).toEqual(expect.stringMatching('href="http://example.com"'));
+    expect(marked('example markdown')).toBe('<p>example html</p>\n');
   });
 });
