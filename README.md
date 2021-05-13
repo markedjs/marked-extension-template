@@ -3,8 +3,8 @@
 
 # TODO:
 
-- [ ] Replace information in readme
-- [ ] Replace information in package.json
+- [ ] Replace information in `/README.md`
+- [ ] Replace information in `/package.json`
 - [ ] Write extension in `/src/index.js`
 - [ ] Write tests in `/spec/index.test.js`
 - [ ] Add NPM_TOKEN secret to repo for release
