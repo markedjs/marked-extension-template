@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/UziTech/marked-extension-template.git"
+    "url": "git+https://github.com/markedjs/marked-extension-template.git"
   },
   "author": "Tony Brix <Tony@Brix.ninja> (https://Tony.Brix.ninja)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/UziTech/marked-extension-template/issues"
+    "url": "https://github.com/markedjs/marked-extension-template/issues"
   },
-  "homepage": "https://github.com/UziTech/marked-extension-template#readme",
+  "homepage": "https://github.com/markedjs/marked-extension-template#readme",
   "peerDependencies": {
     "marked": "^1.0.0 || ^2.0.0"
   },
