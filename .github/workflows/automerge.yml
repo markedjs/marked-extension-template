@@ -25,10 +25,10 @@ jobs:
             });
             if (!pr.data.title.startsWith('chore(deps-dev):')) {
               console.log('Not Merged 🚫');
-              console.log(`Title === '${pr.data.title}'`);
+              console.log(`Title '${pr.data.title}' does not start with 'chore(deps-dev):'`);
             } else if (pr.data.user.login !== 'dependabot[bot]') {
               console.log('Not Merged 🚫');
-              console.log(`User === '${pr.data.user.login}'`);
+              console.log(`User '${pr.data.user.login}' does not equal 'dependabot[bot]'`);
             } else {
               await github.pulls.merge({
                 owner: context.repo.owner,
