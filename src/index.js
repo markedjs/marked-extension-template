@@ -8,11 +8,16 @@ module.exports = function(options = {}) {
           return false;
         }
 
-        return {
+        const token = {
           type: 'paragraph',
           raw: src,
-          text: 'example html'
+          text: 'example html',
+          tokens: []
         };
+
+        this.lexer.inline(token.text, token.tokens);
+
+        return token;
       }
     }
   };
