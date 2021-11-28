@@ -3,11 +3,12 @@
 
 # TODO:
 
-- [ ] Replace information in `/README.md`
 - [ ] Replace information in `/package.json`
 - [ ] Write extension in `/src/index.js`
 - [ ] Write tests in `/spec/index.test.js`
 - [ ] Uncomment release in `/.github/workflows/main.yml`
+- [ ] Replace information in `/rollup.config.js`
+- [ ] Replace information in `/README.md`
 
 <!-- Delete this line and above -->
 
