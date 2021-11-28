@@ -1,5 +1,5 @@
-const { marked } = require('marked/lib/marked.cjs');
-const thisExtension = require('../');
+import { marked } from 'marked';
+import thisExtension from '../src/index.js';
 
 describe('this-extension', () => {
   beforeEach(() => {

@@ -1,4 +1,4 @@
-module.exports = function(options = {}) {
+export default function(options = {}) {
   // extension code here
 
   return {
@@ -21,4 +21,4 @@ module.exports = function(options = {}) {
       }
     }
   };
-};
+}
