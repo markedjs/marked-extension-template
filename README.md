@@ -23,7 +23,7 @@ import |thisExtension| from "marked-|this-extension|";
 
 // or ES Module script
 // import marked from "https://cdn.jsdelivr.net/gh/markedjs/marked/lib/marked.esm.js";
-// import this extension from "https://cdn.jsdelivr.net/gh/UziTech/marked-|this-extension|/lib/index.mjs";
+// import |thisExtension| from "https://cdn.jsdelivr.net/gh/UziTech/marked-|this-extension|/lib/index.mjs";
 
 const options = {
 	// |default options|
