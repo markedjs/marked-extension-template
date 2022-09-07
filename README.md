@@ -4,6 +4,7 @@
 # TODO:
 
 - [ ] Replace information in `/README.md`
+- [ ] Replace name in `/rollup.config.umd.js`
 - [ ] Replace information in `/package.json`
 - [ ] Write extension in `/src/index.js`
 - [ ] Write tests in `/spec/index.test.js`
