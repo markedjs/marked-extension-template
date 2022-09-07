@@ -18,8 +18,8 @@
 <!-- Show most examples of how to use this extension -->
 
 ```js
-const marked = require("marked");
-const |thisExtension| = require("marked-|this-extension|");
+import {marked} from "marked";
+import |thisExtension| from "marked-|this-extension|";
 
 // or ES Module script
 // import marked from "https://cdn.jsdelivr.net/gh/markedjs/marked/lib/marked.esm.js";
@@ -31,7 +31,7 @@ const options = {
 
 marked.use(|thisExtension|(options));
 
-marked("|example markdown|");
+marked.parse("|example markdown|");
 // <p>|example html|</p>
 ```
 
