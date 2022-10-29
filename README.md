@@ -22,9 +22,9 @@
 import {marked} from "marked";
 import |thisExtension| from "marked-|this-extension|";
 
-// or ES Module script
-// import marked from "https://cdn.jsdelivr.net/gh/markedjs/marked/lib/marked.esm.js";
-// import |thisExtension| from "https://cdn.jsdelivr.net/gh/markedjs/marked-|this-extension|/lib/index.mjs";
+// or UMD script
+// <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+// <script src="https://cdn.jsdelivr.net/npm/marked-|this-extension|/lib/index.umd.js"></script>
 
 const options = {
 	// |default options|
