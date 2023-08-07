@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/markedjs/marked-extension-template#readme",
   "peerDependencies": {
-    "marked": "^6.0.0"
+    "marked": "^7.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
@@ -55,7 +55,7 @@
     "eslint-plugin-n": "^16.0.1",
     "eslint-plugin-promise": "^6.1.1",
     "jest-cli": "^29.6.2",
-    "marked": "^6.0.0",
+    "marked": "^7.0.1",
     "rollup": "^3.27.0",
     "semantic-release": "^21.0.7"
   }
