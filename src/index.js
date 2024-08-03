@@ -12,13 +12,13 @@ export default function(options = {}) {
           type: 'paragraph',
           raw: src,
           text: 'example html',
-          tokens: []
+          tokens: [],
         };
 
         this.lexer.inline(token.text, token.tokens);
 
         return token;
-      }
-    }
+      },
+    },
   };
 }
