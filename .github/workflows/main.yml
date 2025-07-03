@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+
 jobs:
 
   Test:
@@ -66,6 +69,9 @@ jobs:
 
   ############ Requires NPM_TOKEN in secrets ############
   # Release:
+  #   permissions:
+  #     contents: write
+  #     id-token: write
   #   needs: [Test, Coverage, Lint, Build]
   #   if: |
   #     github.ref == 'refs/heads/main' &&
