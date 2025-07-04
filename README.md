@@ -2,10 +2,11 @@
 
 # TODO:
 
-- [ ] Replace information in `/README.md`
-- [ ] Replace name in `/esbuild.config.js`
-- [ ] Replace information in `/package.json`
-- [ ] Write extension in `/src/index.js`
+- [ ] Replace all `marked-extension-template` with your extension npm name
+- [ ] Replace all `markedExtensionTemplate` with your extension global name
+- [ ] Update usage in `/README.md`
+- [ ] Update options in `/README.md`
+- [ ] Write extension in `/src/index.ts`
 - [ ] Write tests in `/spec/index.test.js`
 - [ ] Uncomment release in `/.github/workflows/main.yml`
 
