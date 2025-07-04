@@ -4,6 +4,7 @@
 
 - [ ] Replace all `marked-extension-template` with your extension npm name
 - [ ] Replace all `markedExtensionTemplate` with your extension global name
+- [ ] Update description in `/README.md`
 - [ ] Update usage in `/README.md`
 - [ ] Update options in `/README.md`
 - [ ] Write extension in `/src/index.ts`
