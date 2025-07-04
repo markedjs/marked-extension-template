@@ -2,8 +2,8 @@
   "name": "marked-extension-template",
   "version": "0.0.0",
   "description": "marked extension template",
-  "main": "./src/index.js",
-  "module": "./src/index.js",
+  "main": "./lib/index.esm.js",
+  "module": "./lib/index.esm.js",
   "browser": "./lib/index.umd.js",
   "type": "module",
   "keywords": [
@@ -16,18 +16,22 @@
   ],
   "exports": {
     ".": {
-      "default": "./src/index.js"
+      "typescript": "./src/index.ts",
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.esm.js"
     }
   },
   "scripts": {
-    "build": "node esbuild.config.js",
+    "build": "npm run build:esbuild && npm run build:types",
+    "build:esbuild": "node esbuild.config.js",
+    "build:types": "tsc",
     "format": "eslint --fix",
     "lint": "eslint",
-    "test": "node ./spec/test.config.js",
-    "test:cover": "node --experimental-test-coverage ./spec/test.config.js -- --cover",
-    "test:only": "node ./spec/test.config.js -- --only",
-    "test:only:update": "node --test-update-snapshots ./spec/test.config.js -- --only",
-    "test:update": "node --test-update-snapshots ./spec/test.config.js"
+    "test": "npm run build:esbuild && node ./spec/test.config.js",
+    "test:cover": "npm run build:esbuild && node --experimental-test-coverage ./spec/test.config.js -- --cover",
+    "test:only": "npm run build:esbuild && node ./spec/test.config.js -- --only",
+    "test:only:update": "npm run build:esbuild && node --test-update-snapshots ./spec/test.config.js -- --only",
+    "test:update": "npm run build:esbuild && node --test-update-snapshots ./spec/test.config.js"
   },
   "repository": {
     "type": "git",
@@ -54,6 +58,7 @@
     "esbuild-plugin-umd-wrapper": "^3.0.0",
     "eslint": "^9.30.1",
     "marked": "^16.0.0",
-    "semantic-release": "^24.2.6"
+    "semantic-release": "^24.2.6",
+    "typescript": "^5.8.3"
   }
 }
