@@ -10,6 +10,7 @@
     "sourceMap": false,
     "declaration": true,
     "emitDeclarationOnly": true,
+    "esModuleInterop": true,
     "outDir": "lib",
   },
   "include": [
