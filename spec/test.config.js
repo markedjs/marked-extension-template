@@ -6,7 +6,7 @@ run({
   globPatterns: ['spec/**/*.test.js'],
   only: process.argv.includes('--only'),
   coverage: process.argv.includes('--cover'),
-  coverageExcludeGlobs: 'spec/*',
+  coverageExcludeGlobs: ['spec/*', 'lib/*.umd.js'],
   lineCoverage: 100,
   branchCoverage: 100,
   functionCoverage: 100,
