@@ -4,7 +4,7 @@
 # TODO:
 
 - [ ] Replace information in `/README.md`
-- [ ] Replace name in `/rollup.config.js`
+- [ ] Replace name in `/esbuild.config.js`
 - [ ] Replace information in `/package.json`
 - [ ] Write extension in `/src/index.js`
 - [ ] Write tests in `/spec/index.test.js`
