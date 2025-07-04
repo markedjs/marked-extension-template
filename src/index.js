@@ -8,16 +8,14 @@ export default function(options = {}) {
           return false;
         }
 
-        const token = {
+        const text = 'example html';
+
+        return {
           type: 'paragraph',
           raw: src,
-          text: 'example html',
-          tokens: [],
+          text,
+          tokens: this.lexer.inline(text),
         };
-
-        this.lexer.inline(token.text, token.tokens);
-
-        return token;
       },
     },
   };

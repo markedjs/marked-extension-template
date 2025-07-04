@@ -1,18 +1,17 @@
-import { marked } from 'marked';
+import { describe, test } from 'node:test';
+import { Marked } from 'marked';
 import thisExtension from '../src/index.js';
 
 describe('this-extension', () => {
-  beforeEach(() => {
-    marked.setOptions(marked.getDefaults());
+  test('no options', (t) => {
+    const marked = new Marked();
+    marked.use(thisExtension());
+    t.assert.snapshot(marked.parse('example markdown'));
   });
 
-  test('no options', () => {
+  test('markdown not using this extension', (t) => {
+    const marked = new Marked();
     marked.use(thisExtension());
-    expect(marked('example markdown')).toBe('<p>example html</p>\n');
-  });
-
-  test('markdown not using this extension', () => {
-    marked.use(thisExtension());
-    expect(marked('not example markdown')).not.toBe('<p>example html</p>\n');
+    t.assert.snapshot(marked.parse('not example markdown'));
   });
 });
