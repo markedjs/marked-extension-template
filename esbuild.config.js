@@ -24,6 +24,6 @@ await esbuild.build(config({
   format: 'umd',
   outfile: 'lib/index.umd.js',
   plugins: [umdWrapper({
-    libraryName: 'markedThisExtension',
+    libraryName: 'markedExtensionTemplate',
   })],
 }));

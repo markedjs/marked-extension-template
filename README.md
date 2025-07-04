@@ -1,4 +1,3 @@
-<!-- The character `|` around a string denotes a place in this markdown file that needs to be changed for each extension. -->
 <!-- You may also delete any comments you don't need anymore. -->
 
 # TODO:
@@ -12,7 +11,7 @@
 
 <!-- Delete this line and above -->
 
-# marked-|this-extension|
+# marked-extension-template
 <!-- Description -->
 
 # Usage
@@ -20,20 +19,20 @@
 
 ```js
 import {marked} from "marked";
-import |thisExtension| from "marked-|this-extension|";
+import markedExtensionTemplate from "marked-extension-template";
 
 // or UMD script
 // <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
-// <script src="https://cdn.jsdelivr.net/npm/marked-|this-extension|/lib/index.umd.js"></script>
+// <script src="https://cdn.jsdelivr.net/npm/marked-extension-template/lib/index.umd.js"></script>
 
 const options = {
-	// |default options|
+	// default options
 };
 
-marked.use(|thisExtension|(options));
+marked.use(markedExtensionTemplate(options));
 
-marked.parse("|example markdown|");
-// <p>|example html|</p>
+marked.parse("example markdown");
+// <p>example html</p>
 ```
 
 ## `options`
