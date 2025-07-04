@@ -1,7 +1,7 @@
-exports[`this-extension > markdown not using this extension 1`] = `
+exports[`marked-extension-template > markdown not using this extension 1`] = `
 "<p>not example markdown</p>\\n"
 `;
 
-exports[`this-extension > no options 1`] = `
+exports[`marked-extension-template > no options 1`] = `
 "<p>example html</p>\\n"
 `;
