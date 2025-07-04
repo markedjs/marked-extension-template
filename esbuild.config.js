@@ -3,13 +3,18 @@ import { umdWrapper } from 'esbuild-plugin-umd-wrapper';
 
 function config(options) {
   return {
-    entryPoints: ['src/index.js'],
+    entryPoints: ['./src/index.ts'],
     sourcemap: true,
     bundle: true,
     minify: true,
     ...options,
   };
 }
+
+await esbuild.build(config({
+  format: 'esm',
+  outfile: 'lib/index.esm.js',
+}));
 
 await esbuild.build(config({
   format: 'umd',

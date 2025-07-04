@@ -1,4 +1,6 @@
-export default function(options = {}) {
+import type { MarkedExtension } from 'marked';
+
+export default function(options = {}): MarkedExtension {
   // extension code here
 
   return {
