@@ -18,7 +18,7 @@ await esbuild.build(config({
 
 await esbuild.build(config({
   stdin: {
-    contents: 'module.exports = require("./lib/index.esm.js").default',
+    contents: 'module.exports = require("./src/index.ts").default',
     resolveDir: '.',
   },
   format: 'umd',
