@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "marked-extension-template": [
+        "lib/index.d.ts"
+      ]
+    }
+  },
+  "include": [
+    "spec/*.test-types.ts"
+  ]
+}
