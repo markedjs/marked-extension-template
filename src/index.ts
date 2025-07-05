@@ -1,3 +1,4 @@
+// node:coverage ignore next
 import type { MarkedExtension } from 'marked';
 
 export default function(options = {}): MarkedExtension {
