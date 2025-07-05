@@ -1,3 +1,0 @@
-exports[`marked-extension-template umd > no options 1`] = `
-"<p>example html</p>\\n"
-`;
