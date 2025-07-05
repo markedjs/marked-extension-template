@@ -8,10 +8,11 @@
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "NodeNext",
     "sourceMap": false,
-    "declaration": true,
-    "emitDeclarationOnly": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
     "esModuleInterop": true,
     "outDir": "lib",
+    "rootDir": "."
   },
   "include": [
     "src/*.ts",

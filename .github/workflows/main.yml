@@ -25,6 +25,20 @@ jobs:
       - name: Run Tests 👩🏽‍💻
         run: npm run test
 
+  Types:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Install Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+      - name: Install Dependencies
+        run: npm ci
+      - name: Run Tests 👩🏽‍💻
+        run: npm run test:types
+
   Coverage:
     runs-on: ubuntu-latest
     steps:
@@ -72,7 +86,7 @@ jobs:
   #   permissions:
   #     contents: write
   #     id-token: write
-  #   needs: [Test, Coverage, Lint, Build]
+  #   needs: [Test, Types, Coverage, Lint, Build]
   #   if: |
   #     github.ref == 'refs/heads/main' &&
   #     github.event.repository.fork == false

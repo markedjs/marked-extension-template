@@ -9,6 +9,8 @@
 - [ ] Update options in `/README.md`
 - [ ] Write extension in `/src/index.ts`
 - [ ] Write tests in `/spec/index.test.js`
+- [ ] Update UMD test in `/spec/umd.test.js`
+- [ ] Write typescript tests in `/spec/index.test-types.ts`
 - [ ] Uncomment release in `/.github/workflows/main.yml`
 
 <!-- Delete this line and above -->
@@ -20,12 +22,15 @@
 <!-- Show most examples of how to use this extension -->
 
 ```js
-import {marked} from "marked";
+import {Marked} from "marked";
 import markedExtensionTemplate from "marked-extension-template";
 
 // or UMD script
 // <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
 // <script src="https://cdn.jsdelivr.net/npm/marked-extension-template/lib/index.umd.js"></script>
+// const Marked = marked.Marked;
+
+const marked = new Marked();
 
 const options = {
 	// default options
