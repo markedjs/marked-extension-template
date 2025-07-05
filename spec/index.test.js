@@ -1,6 +1,6 @@
 import { describe, test } from 'node:test';
 import { Marked } from 'marked';
-import markedExtensionTemplate from '../lib/index.esm.js';
+import markedExtensionTemplate from '../src/index.ts';
 
 describe('marked-extension-template', () => {
   test('no options', (t) => {
