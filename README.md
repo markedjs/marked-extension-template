@@ -9,7 +9,6 @@
 - [ ] Update options in `/README.md`
 - [ ] Write extension in `/src/index.ts`
 - [ ] Write tests in `/spec/index.test.js`
-- [ ] Update UMD test in `/spec/umd.test.js`
 - [ ] Write typescript tests in `/spec/index.test-types.ts`
 - [ ] Uncomment release in `/.github/workflows/main.yml`
 

@@ -30,7 +30,6 @@
     "test": "npm run build:esbuild && node --experimental-transform-types ./spec/test.config.js",
     "test:cover": "npm run build:esbuild && node --experimental-transform-types --experimental-test-coverage ./spec/test.config.js -- --cover",
     "test:only": "npm run build:esbuild && node --experimental-transform-types ./spec/test.config.js -- --only",
-    "test:only:update": "npm run build:esbuild && node --experimental-transform-types --test-update-snapshots ./spec/test.config.js -- --only",
     "test:types": "npm run build:types && tsc --project tsconfig-test-types.json && attw -P --entrypoints . --profile esm-only",
     "test:update": "npm run build:esbuild && node --experimental-transform-types --test-update-snapshots ./spec/test.config.js"
   },
