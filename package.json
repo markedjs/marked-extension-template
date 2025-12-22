@@ -56,7 +56,7 @@
     "@semantic-release/npm": "^13.1.3",
     "@semantic-release/release-notes-generator": "^14.1.0",
     "dts-bundle-generator": "^9.5.1",
-    "esbuild": "^0.27.1",
+    "esbuild": "^0.27.2",
     "esbuild-plugin-umd-wrapper": "^3.0.0",
     "eslint": "^9.39.2",
     "marked": "^17.0.1",
