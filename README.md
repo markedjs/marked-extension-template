@@ -17,12 +17,12 @@
 
 ## Notes
 
-By default, projects created using this template are configured to automatically merge dependency
+By default, projects created using this template are configured to automatically merge dev dependency
 updates as soon as they are released. Be aware that this may put your repository at risk of
 supply-chain attacks if dependencies are compromised. You should decide whether the reduced 
 maintenance burden of this decision is worthwhile given this risk.
 
-* If you wish to disable the automatic merging of dependency updates, delete `.github/workflows/automerge.yml`
+* If you wish to disable the automatic merging of dev dependency updates, delete `.github/workflows/automerge.yml`
 * Consider adding a [cooldown time](https://docs.github.com/en/code-security/reference/supply-chain-security/dependabot-options-reference#cooldown-)
   for Dependabot dependency updates
 
