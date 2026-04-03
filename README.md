@@ -20,7 +20,7 @@ updates as soon as they are released. Be aware that this may put your repository
 supply-chain attacks if dependencies are compromised. You should decide whether the reduced 
 maintenance burden of this decision is worthwhile given this risk.
 
-* If you wish to disable the automatic merging of dev dependency updates, delete `.github/workflows/automerge.yml`
+* If you wish to disable the automatic merging of dev dependency updates, delete `/.github/workflows/automerge.yml`
 * Consider adding a [cooldown time](https://docs.github.com/en/code-security/reference/supply-chain-security/dependabot-options-reference#cooldown-)
   for Dependabot dependency updates
 
