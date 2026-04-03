@@ -1,5 +1,3 @@
-# marked-extension-template
-
 <!-- You may also delete any comments you don't need anymore. -->
 
 ## TODO:
@@ -28,7 +26,7 @@ maintenance burden of this decision is worthwhile given this risk.
 
 <!-- Delete this line and above -->
 
-# Your extension name
+# marked-extension-template
 <!-- Description -->
 
 ## Usage
