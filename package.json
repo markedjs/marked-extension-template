@@ -44,7 +44,7 @@
   },
   "homepage": "https://github.com/markedjs/marked-extension-template#readme",
   "peerDependencies": {
-    "marked": ">=17 <18"
+    "marked": ">=18 <19"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.18.2",
@@ -59,7 +59,7 @@
     "esbuild": "^0.28.0",
     "esbuild-plugin-umd-wrapper": "^3.0.0",
     "eslint": "^10.2.0",
-    "marked": "^17.0.6",
+    "marked": "^18.0.0",
     "semantic-release": "^25.0.3",
     "typescript": "^6.0.2"
   }
