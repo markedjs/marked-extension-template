@@ -24,7 +24,7 @@
   "scripts": {
     "build": "npm run build:esbuild && npm run build:types",
     "build:esbuild": "node esbuild.config.ts",
-    "build:types": "tsc && dts-bundle-generator --export-referenced-types --project tston -o lib/index.d.ts src/index.ts",
+    "build:types": "tsc && dts-bundle-generator --export-referenced-types --project tsconfig.json -o lib/index.d.ts src/index.ts",
     "format": "eslint --fix",
     "lint": "eslint",
     "test": "npm run build:esbuild && node ./spec/test.config.ts",
