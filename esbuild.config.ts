@@ -1,7 +1,8 @@
 import * as esbuild from 'esbuild';
+import type { BuildOptions, Format } from 'esbuild';
 import { umdWrapper } from 'esbuild-plugin-umd-wrapper';
 
-function config(options) {
+function config(options: BuildOptions) {
   return {
     sourcemap: true,
     bundle: true,
@@ -21,7 +22,7 @@ await esbuild.build(config({
     contents: 'module.exports = require("./src/index.ts").default',
     resolveDir: '.',
   },
-  format: 'umd',
+  format: 'umd' as Format,
   outfile: 'lib/index.umd.js',
   plugins: [umdWrapper({
     libraryName: 'markedExtensionTemplate',
