@@ -59,7 +59,7 @@
     "dts-bundle-generator": "^9.5.1",
     "esbuild": "^0.28.1",
     "esbuild-plugin-umd-wrapper": "^3.0.0",
-    "eslint": "^10.6.0",
+    "eslint": "^10.7.0",
     "jiti": "^2.7.0",
     "marked": "^18.0.5",
     "semantic-release": "^25.0.5",
