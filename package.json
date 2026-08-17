@@ -57,7 +57,7 @@
     "@semantic-release/release-notes-generator": "^14.1.1",
     "@types/node": "^26.2.0",
     "dts-bundle-generator": "^9.5.1",
-    "esbuild": "^0.28.1",
+    "esbuild": "^0.28.2",
     "esbuild-plugin-umd-wrapper": "^3.0.0",
     "eslint": "^10.8.1",
     "jiti": "^2.7.0",
